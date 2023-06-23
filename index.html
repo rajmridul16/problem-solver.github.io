@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engineering Problem Solver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e6f7ff, #b3e6ff);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engineering Problem Solver</h1>
+    <div class="form-container">
+        <form action="/process-image" method="post" enctype="multipart/form-data">
+            <label for="problemImage">Upload Image of Problem:</label>
+            <input type="file" name="problemImage" id="problemImage" required>
+            <label for="solution">Provide Solution (optional):</label>
+            <textarea name="solution" id="solution" rows="4"></textarea>
+            <input type="submit" value="Upload and Solve">
+        </form>
+    </div>
+</body>
+</html>
